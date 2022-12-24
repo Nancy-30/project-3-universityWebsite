@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University | Course</title>
+    <link rel="stylesheet" href = "2nd.css">
+    <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <a href = "index.html">
+                <img src = "./logo.png" alt=""> <!--adding logo image-->
+            </a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-times-circle" onclick = "hideMenu()"></i>  <!--cancel button icon-->
+                <ul>
+                    <li><a href="2nd.html">Home</a></li> <!--providing links with name-->
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclcick = "showMenu()"></i>      <!--menu bar icon-->
+        </nav>
+        <h1>
+            Our Course
+        </h1>
+    </section>
+    <!-- ===============course page ======================= -->
+    <section class = "course">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="course_col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perferendis animi ea aut sint id cumque inventore nesciunt unde nihil facere fugit necessitatibus consequatur ex delectus tempora dicta excepturi soluta?</p>
+            </div>
+            <div class="course_col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perferendis animi ea aut sint id cumque inventore nesciunt unde nihil facere fugit necessitatibus consequatur ex delectus tempora dicta excepturi soluta?</p>
+            </div>
+            <div class="course_col">
+                <h3>Post Graduate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perferendis animi ea aut sint id cumque inventore nesciunt unde nihil facere fugit necessitatibus consequatur ex delectus tempora dicta excepturi soluta?</p>
+            </div>
+        </div>
+    </section>
+    <!-- ============ facilites ================================ -->
+    <section class = "facilties">
+        <h1>Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+
+            <div class="fac_col">
+                <img src="./library.png">
+                <h3>World class library</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nostrum repellendus provident possimus? Repudiandae at.</p>
+            </div>
+
+            <div class="fac_col">
+                <img src="./basketball.png">
+                <h3>Largest Play ground</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nostrum repellendus provident possimus? Repudiandae at.</p>
+            </div>
+
+            <div class="fac_col">
+                <img src="./cafeteria.png">
+                <h3>Tasty and healthy food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nostrum repellendus provident possimus? Repudiandae at.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================footer-about======================= -->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum vitae delectus animi <br>quidem possimus nobis repudiandae accusamus corporis libero ratione!</p>
+        <div class = "icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart" ></i>  by Easy Tutorials</p>
+    </section>
+
+
+
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLink = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-- javascript end -->
+    
+</body>
+</html>

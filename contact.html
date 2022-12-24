@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University | Contact us</title>
+    <link rel="stylesheet" href = "2nd.css">
+    <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <a href = "index.html">
+                <img src = "./logo.png" alt=""> <!--adding logo image-->
+            </a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-times-circle" onclick = "hideMenu()"></i>  <!--cancel button icon-->
+                <ul>
+                    <li><a href="2nd.html">Home</a></li> <!--providing links with name-->
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclcick = "showMenu()"></i>      <!--menu bar icon-->
+        </nav>
+        <h1>
+            Contact us
+        </h1>
+    </section>
+    <!-- ===============Contact us content======================= -->
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15386.482708124766!2d75.0260553!3d15.397016249999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1655631622022!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+
+   <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" ></i>
+                    <span>
+                        <h5>XYZ road , ABC building</h5>
+                        <p>Bangalore , karnataka , IN</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone" ></i>
+                    <span>
+                        <h5>+91-76823509857</h5>
+                        <p>Monday to Saturday</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o" ></i>
+                    <span>
+                        <h5>info@akaaaaaaaaadbakad.com</h5>
+                        <p>Mail us your query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="">
+                    <input type = "text" name = "name" placeholder="Enter your name" required>
+                    <input type = "email" name = "email" placeholder="Enter email address" required>
+                    <input type = "text" name = "subject" placeholder="Enter your subject" required>
+                    <textarea rows="9" name = "message" placeholder="Message" required></textarea>
+                    <button type="submit" class = "hero-btn red-btn">Send</button>
+                </form>
+            </div>
+        </div>
+   </section>
+
+
+    <!-- =================footer-about======================= -->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum vitae delectus animi <br>quidem possimus nobis repudiandae accusamus corporis libero ratione!</p>
+        <div class = "icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart" ></i>  by Easy Tutorials</p>
+    </section>
+
+
+
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLink = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-- javascript end -->
+    
+</body>
+</html>
